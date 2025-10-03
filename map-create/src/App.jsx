@@ -1,35 +1,66 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./style.css"
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  return <form className="home-form">
+    <div className="header">
+      <div className="headcontent">
+        <button>Navigation</button>
+        <input
+        type="text"
+        placeholder="Search..."></input>
+      </div>
+    </div>
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="body">
+      <div className="line">
+
+        <div className="city">
+        <div className="body"></div>
+        <div className="description">
+          <h2>Davao City</h2>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+
+      <div className="city">
+        <div className="body"></div>
+        <div className="description">
+          <h2>Davao City</h2>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+      <div className="city">
+        <div className="body"></div>
+        <div className="description">
+          <h2>Davao City</h2>
+        </div>
+      </div>
+
+      </div>
+
+            <div className="line">
+
+        <div className="city">
+        <div className="body"></div>
+        <div className="description">
+          <h2>Davao City</h2>
+        </div>
+      </div>
+
+      <div className="city">
+        <div className="body"></div>
+        <div className="description">
+          <h2>Davao City</h2>
+        </div>
+      </div>
+
+      <div className="city">
+        <div className="body"></div>
+        <div className="description">
+          <h2>Davao City</h2>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </form>
 }
-
-export default App
