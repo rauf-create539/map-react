@@ -1,4 +1,4 @@
-export default function Filter({ filter, setFilter }) {
+function Filter({ filter, setFilter }) {
     return (
       <div className="flex gap-15 flex items justify-center items-center">
         
@@ -21,3 +21,5 @@ export default function Filter({ filter, setFilter }) {
       </div>
     )
 }
+
+export default Filter;
