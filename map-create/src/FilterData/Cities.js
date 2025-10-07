@@ -1,16 +1,16 @@
   //Cities array
   const cities = [
-    { id: 1, category: "luzon", name: "Manila"},
-    { id: 2, category: "luzon", name: "Quezon_City"},
-    { id: 3, category: "luzon", name: "Baguio"},
-    { id: 4, category: "visayas", name: "Cebu City"},
-    { id: 5,  category: "visayas", name: "Tacloban City"},  
-    { id: 6,  category: "visayas", name: "Iloilo City"},
-    { id: 7,  category: "mindanao", name: "Davao City"},
-    { id: 8,  category: "mindanao", name: "Butuan City"},
-    { id: 9,  category: "mindanao", name: "General Santos"},
-    { id: 10, category: "mindanao", name: "Zamboanga City"},
-    { id: 11, category: "mindanao", name: "Cagayan de Oro"},
+    { id: 1, slug: "manila", image: "/Images/Manila_City.jpg",category: "Luzon", name: "Manila"},
+    { id: 2, slug: "quezon", image: "/Images/quezon.jpg",category: "Luzon", name: "Quezon_City"},
+    { id: 3, slug: "baguio", image: "/Images/baguio_city.jpg",category: "Luzon", name: "Baguio"},
+    { id: 4, slug: "cebu", image: "/Images/Cebu-City-Oldest-City-in-the-Philippines-Aerial-View-Copyright-to-Project-LUPAD-1.jpg",category: "Visayas", name: "Cebu City"},
+    { id: 5, slug: "tacloban", image: "/Images/tacloban_city.jpg", category: "Visayas", name: "Tacloban City"},  
+    { id: 6, slug: "iloilo", image: "/Images/iloili_city.jpg", category: "Visayas", name: "Iloilo City"},
+    { id: 7, slug: "davao", image: "/Images/davaocity.jpg", category: "Mindanao", name: "Davao City"},
+    { id: 8, slug: "butuan", image: "/Images/Aerial-of-Butuan-City.jpg", category: "Mindanao", name: "Butuan City"},
+    { id: 9, slug: "gensan", image: "/Images/Plaza_Heneral_GenSan_RobSison.jpg", category: "Mindanao", name: "General Santos"},
+    { id: 10,slug: "zamboanga", image: "/Images/zambo.jpg", category: "Mindanao", name: "Zamboanga City"},
+    { id: 11,slug: "cagayan", image: "/Images/cagayan.jpg", category: "Mindanao", name: "Cagayan de Oro"},
   ];
 
   export default cities;
