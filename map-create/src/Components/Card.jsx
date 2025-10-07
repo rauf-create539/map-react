@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 function Card({ cities }) {
-  const navigate = useNavigate();
+
 
   return (
         <div className="flex justify-center 
-        mt-10 min-h-screen">
+        mt-6 min-h-screen">
 
       <ul className="grid grid-cols-3 gap-8">
+
         {cities.map((city) => (
           <li key={city.id} 
           className="w-[310px] h-[250px] 

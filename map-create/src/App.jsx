@@ -1,10 +1,12 @@
 import "./style.css"
 import { useState } from "react";
+import Searchbar from "./Components/Searchbar";
+import { useSearchParams } from "react-router-dom";
 import FilterBtn from './Components/FilterBtn';
 import cities from './FilterData/Cities';
 import Card from './Components/Card';
-import SideBar from "./Sidebar/SideBar";
-import { Routes, Route } from "react-router-dom";
+import SideBar from "./Components/SideBar";
+import { Routes, Route, Link, NavLink } from "react-router-dom";
 import Details from "./Components/Details";
 
 export default function App() {
@@ -17,11 +19,13 @@ export default function App() {
 
 
   return (
+  
+  
     <Routes>
       <Route 
       path="/"
       element={
-    <div className="h-screen flex flex-col">
+    <div className="h-screen flex flex-col pb-5">
 
     {/*Header 1/2: City Explorer Pro*/}
     <div className="sticky top-0 z-50 bg-white">
@@ -32,16 +36,7 @@ export default function App() {
     </div>
 
     {/*Header 2/2: Button and Searchbar*/}
-    <div className="sticky top-[70px] z-50 w-full h-[120px] flex items justify-center items-center bg-white border border-black" >
-      <div className="flex gap-8">
-        <button className="h-[50px] w-[100px] font-regular rounded-2xl bg-blue-500 text-white">Navigation</button>
-        <input
-        type="text"
-        placeholder="Search..."
-        className="w-[880px] h-[50px] pl-3 border rounded-2xl bg-white"></input>
-      </div>
-
-    </div>
+    <Searchbar />
 
     {/*Body: */}
     <div className="flex flex-1 overflow-hidden bg-white">
@@ -57,10 +52,10 @@ export default function App() {
       </div>
     </div>
   </div>
-      }
-      
-      />
-      <Route path="/city/:id" element={<Details />} />
+      } />
+    
+    {/*Direct to new page(details)*/}
+    <Route path="/cities/:id" element={<Details />} />
     </Routes>
   );
 }

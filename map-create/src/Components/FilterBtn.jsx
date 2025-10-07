@@ -8,7 +8,7 @@ function Filter({ filter, setFilter }) {
           <button
           key={region}
           onClick={() => setFilter(region)}
-          className={`w-[120px] h-[50px] border transition duration-300 ease-in-out mt-4 font-medium 
+          className={`w-[120px] h-[50px] border transition duration-300 ease-in-out mt-2 font-medium 
           rounded-2xl shadow-xl bg-blue-500
           ${filter === region ? "bg-blue-500 text-white scale-105" : "bg-white hover:bg-blue-500 hover:text-white hover:scale-105"}`}
           >
