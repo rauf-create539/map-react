@@ -2,7 +2,7 @@ function Filter({ filter, setFilter }) {
   const buttons = ["all", "Luzon", "Visayas", "Mindanao"]
 
     return (
-      <div className="flex gap-15 flex items justify-center items-center">
+      <div className="flex gap-15 items justify-center items-center">
         
         {buttons.map((region) => (
           <button

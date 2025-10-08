@@ -10,7 +10,7 @@ function Searchbar(){
         <input
         type="text"
         placeholder="Search and explore..."
-        className="w-[880px] h-[50px] pl-3 border rounded-2xl bg-white border-2" />
+        className="w-[880px] h-[50px] pl-3 border rounded-2xl bg-white" />
 
         <button
           type="submit"

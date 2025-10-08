@@ -13,7 +13,7 @@ function Details(){
 
   return (
     <div className="overflow-x-hidden pb-6"> 
-      <div className="relative flex justify-center items-center h-[70px] sticky top-0 z-50 bg-white">
+      <div className="relative flex justify-center items-center h-[70px] top-0 z-50 bg-white">
 
         <button
         onClick={() => navigate(-1)} className="bg-black text-white absolute left-5 ml-8 p-2 w-[100px] hover:bg-white hover:text-black hover:border-2 transition ease-in-out">
