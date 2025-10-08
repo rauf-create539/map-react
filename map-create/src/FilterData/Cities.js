@@ -120,20 +120,20 @@
              , attractions: [
         {
         id: 1,
-        name: "",
-        image: "",
+        name: "Sto. Nino Shrine and Heritage Museum",
+        image: "/Images/st. nino.jpg",
         
         },
        {
         id: 2,
-        name: "",
-        image: "",
+        name: "MacArthur Landing Memorial Park",
+        image: "/Images/red beach.jpg",
         
       },
           {
         id: 3,
-        name: "",
-        image: "",
+        name: "Leyte Provincial Capitol",
+        image: "/Images/leyte.jpg",
         
     },
       ],
@@ -148,20 +148,20 @@
             , attractions: [
         {
         id: 1,
-        name: "",
-        image: "",
+        name: "Molo Mansion",
+        image: "/Images/Molo mansion.jpg",
         
         },
        {
         id: 2,
-        name: "",
-        image: "",
+        name: "Jaro Cathedral",
+        image: "/Images/Jaro.jpg",
         
       },
           {
         id: 3,
-        name: "",
-        image: "",
+        name: "Calle Real",
+        image: "/Images/calle.jpg",
         
     },
       ],
@@ -176,20 +176,20 @@
              , attractions: [
         {
         id: 1,
-        name: "",
-        image: "",
+        name: "Samal Island",
+        image: "/Images/samal.jpg",
         
         },
        {
         id: 2,
-        name: "",
-        image: "",
+        name: "San Pedro Cathedral",
+        image: "/Images/sanpedro.jpg",
         
       },
           {
         id: 3,
-        name: "",
-        image: "",
+        name: "Mount Apo",
+        image: "/Images/t. apo.jpg",
         
     },
       ],
@@ -204,20 +204,20 @@
              , attractions: [
         {
         id: 1,
-        name: "",
-        image: "",
+        name: "Mount Mayapay",
+        image: "/Images/mayapay.jpg",
         
         },
        {
         id: 2,
-        name: "",
-        image: "",
+        name: "Saint Joseph Cathedral",
+        image: "/Images/St. joseph.jpg",
         
       },
           {
         id: 3,
-        name: "",
-        image: "",
+        name: "Bood Eco Park",
+        image: "/Images/bood.jpg",
         
     },
       ],
@@ -232,20 +232,20 @@
             , attractions: [
         {
         id: 1,
-        name: "",
-        image: "",
+        name: "Sanchez Peak",
+        image: "/Images/sanchez.jpg",
         
         },
        {
         id: 2,
-        name: "",
-        image: "",
+        name: "Sarangani Highlands",
+        image: "/Images/sarangani.jpg",
         
       },
           {
         id: 3,
-        name: "",
-        image: "",
+        name: "Plaza Heneral Santos",
+        image: "/Images/plaza.jpg",
         
     },
       ],
@@ -260,20 +260,20 @@
             , attractions: [
         {
         id: 1,
-        name: "",
-        image: "",
+        name: "Santa Cruz Island",
+        image: "/Images/santacruz.jpg",
         
         },
        {
         id: 2,
-        name: "",
-        image: "",
+        name: "Sadik Grand Mosque",
+        image: "/Images/sadik.jpg",
         
       },
           {
         id: 3,
-        name: "",
-        image: "",
+        name: "Fort Pillar",
+        image: "/Images/fort pillar.jpg",
        
     },
       ],
@@ -288,20 +288,20 @@
              , attractions: [
         {
         id: 1,
-        name: "",
-        image: "",
+        name: "Mapwa Nature Park",
+        image: "/Images/mapwa.jpg",
         
         },
        {
         id: 2,
-        name: "",
-        image: "",
+        name: "Gardens of Malazag Eco-Tourism Village",
+        image: "/Images/gardens of malasag.jpg",
         
       },
           {
         id: 3,
-        name: "",
-        image: "",
+        name: "Dahilayan Adventure Park",
+        image: "/Images/dahilayan.jpg",
         
     },
       ],
