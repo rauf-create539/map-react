@@ -53,7 +53,7 @@ function Details(){
           {city.attractions?.map((p) =>(
             <div
               key={p.id}
-              className="w-[260px] h-[230px] border border-black rounded-xl overflow-hidden hover:scale-105 transition ease-in-out"
+              className="w-[260px] h-[230px] border border-black shadow-lg rounded-xl overflow-hidden hover:scale-105 transition ease-in-out"
             >
               
               <img 

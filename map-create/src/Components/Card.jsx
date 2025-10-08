@@ -15,10 +15,10 @@ function Card({ cities }) {
           <li key={city.id} 
           className="w-[310px] h-[250px] 
           flex flex-col 
-          justify-end p-4
+          justify-end p-4 shadow-lg
           border border-black
            bg-white rounded-xl
-           hover:bg-green-300 hover:scale-105 
+            hover:scale-105 
            transition duration-300 ease-in-out 
            ">
         

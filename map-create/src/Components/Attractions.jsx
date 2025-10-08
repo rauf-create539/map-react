@@ -1,7 +1,7 @@
 
 function Attractions() {
   return (
-    <div></div>
+    <div>Hello</div>
   )
 }
 
