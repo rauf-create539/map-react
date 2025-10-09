@@ -14,7 +14,7 @@ export default function Layout({ filter, setFilter, filteredItems }) {
           City Explorer Pro
         </h1>
         <div className="text-center">
-          <h3 className="text-xs sm:text-sm md:text-base font-extralight mt-1 text-[#009246]/80">By Techweave</h3>
+          <h3 className="text-xs sm:text-sm md:text-base font-extralight mt-1 text-gray-600/80">By Techweave</h3>
         </div>
       </header>
 

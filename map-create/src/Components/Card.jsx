@@ -57,21 +57,21 @@ function Card({ cities }) {
           {filteredCities.map((city) => (
             <motion.li
               key={city.id}
-              className="w-full max-w-[310px] mx-auto h-[250px] flex flex-col justify-end p-4 shadow-lg border border-[#009246]/20 bg-white rounded-xl hover:scale-105 transition duration-300 ease-in-out"
+              className="w-full max-w-[310px] mx-auto h-[250px] flex flex-col justify-end p-4 shadow-lg border border-[#009246]/20 bg-[#009246] rounded-xl hover:scale-105 transition duration-300 ease-in-out"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.4 }}
             >
               <div className="relative">
                 <Link to={`/cities/${city.id}`}>
-                  <div className="w-full h-[180px] overflow-hidden rounded-t-xl shadow-3xl">
+                  <div className="w-full h-[180px] overflow-hidden rounded-t-xl shadow-3xl pl-[7.5px]">
                     <img
                       src={city.image}
                       alt={city.name}
                       className="w-full h-full object-cover pt-3"
                     />
                   </div>
-                  <div>
+                  <div className="text-white">
                     <h1 className="text-lg font-bold">{city.name}</h1>
                     <p>Region: {city.category}</p>
                   </div>
