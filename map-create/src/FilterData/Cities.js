@@ -275,7 +275,7 @@
       },
           {
         id: 3,
-        name: "Fort Pillar",
+        name: "Fort Pilar",
         image: "/Images/fort pillar.jpg",
        
     },

@@ -23,7 +23,7 @@ export default function Layout({ filter, setFilter, filteredItems }) {
           <SideBar />
         </div>
 
-        <div className={`px-3 sm:px-4 py-2 sm:py-3 bg-white ${hideSearchBar ? 'hidden' : ''} sticky top-[125px] md:top-[89px] z-30`}>
+        <div className={`px-3 sm:px-4 py-2 sm:py-3 bg-white ${hideSearchBar ? 'hidden' : ''} sticky top-[125px] md:top-[89px] z-30 `}>
           <div className="max-w-3xl mx-auto">
             <Searchbar />
           </div>

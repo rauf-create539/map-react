@@ -4,7 +4,6 @@ function SideBar() {
   const menuItems = [
     { name: "Cities", path: "/"},
     { name: "Favorites", path: "/favorites"},
-    { name: "Theme", path: "/theme"},
     { name: "Atrractions", path: "/attractions"},
     { name: "About", path: "/about"},
   ];
