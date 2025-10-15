@@ -1,61 +1,45 @@
-import "./style.css"
+import "./style.css";
 import { useState } from "react";
-import Searchbar from "./Components/Searchbar";
-import { useSearchParams } from "react-router-dom";
-import FilterBtn from './Components/FilterBtn';
-import cities from './FilterData/Cities';
-import Card from './Components/Card';
-import SideBar from "./Components/SideBar";
-import { Routes, Route, Link, NavLink } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./Components/layout";
+import FilterBtn from "./Components/FilterBtn";
+import Card from "./Components/Card";
+import cities from "./FilterData/Cities";
 import Details from "./Components/Details";
+import About from "./Components/About";
+import Favorites from "./Components/Favorites";
+import Attractions from "./Components/Attractions";
+import { FavoritesProvider } from "./context/FavoritesContext";
+
 
 export default function App() {
-
-
   const [filter, setFilter] = useState("all");
 
   const filteredItems =
-  filter === "all" ? cities : cities.filter((city) => city.category === filter);
-
+    filter === "all" ? cities : cities.filter((city) => city.category === filter);
 
   return (
-  
-  
-    <Routes>
-      <Route 
-      path="/"
-      element={
-    <div className="h-screen flex flex-col pb-5">
+    <FavoritesProvider>
+      <Routes>
+        <Route element={<Layout filter={filter} setFilter={setFilter} filteredItems={filteredItems} />}>
+          <Route
+            path="/"
+            element={
+              <>
+                <FilterBtn filter={filter} setFilter={setFilter} />
+                <Card cities={filteredItems} />
+              </>
+            }
+          />
+          <Route path="/about" element={<About />} />
+          <Route path="/favorites" element={<Favorites />} />
+          <Route path="/theme" element={<h2>Theme Page</h2>} />
+          <Route path="/attractions" element={<Attractions />} />
+        </Route>
 
-    {/*Header 1/2: City Explorer Pro*/}
-    <div className="sticky top-0 z-50 bg-white">
-      <h1 className="text-3xl text-center mt-2.5 font-semibold text-black">City Explorer Pro</h1>
-      <div className="text-center">
-        <h3 className="font-extralight mb-4">By Techweave</h3>
-      </div>
-    </div>
-
-    {/*Header 2/2: Button and Searchbar*/}
-    <Searchbar />
-
-    {/*Body: */}
-    <div className="flex flex-1 overflow-hidden bg-white">
-
-      <SideBar />
-
-      <div className="flex flex-col flex-1 p-4 overflow-y-auto">
-        {/*Body: Filter buttons called from other file*/}
-        <FilterBtn filter={filter} setFilter={setFilter} />
-
-        {/*Body: Cities*/}
-      <Card cities={filteredItems}/>
-      </div>
-    </div>
-  </div>
-      } />
-    
-    {/*Direct to new page(details)*/}
-    <Route path="/cities/:id" element={<Details />} />
-    </Routes>
+        {/* Details page */}
+        <Route path="/cities/:id" element={<Details />} />
+      </Routes>
+    </FavoritesProvider>
   );
 }
